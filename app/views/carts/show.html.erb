@@ -3,7 +3,9 @@
   <header class="page-header">
     <h1>My Cart</h1>
   </header>
-
+  <% unless (cart_subtotal_cents != 0) %> 
+  <h3> Oh, you forgot to fill this cart! Let me help you with that: <%=link_to "Home", root_path%></h3>
+  <% else %>
   <div class="panel panel-default items">
     <table class="table table-bordered">
       <thead>
@@ -25,7 +27,7 @@
             TOTAL:
           </th>
           <th>
-            <%= humanized_money_with_symbol(cart_subtotal_cents / 100.0)%>
+            <%= humanized_money_with_symbol (cart_subtotal_cents / 100.0)%>
           </th>
         </tr>
       </tfoot>
@@ -45,8 +47,9 @@
           data-email="kvirani@gmail.com"
           data-currency="cad">
         </script>
-      <% end %>
+      <% end%>
     </div>
   </div>
+  <%end%>
 
 </section>
