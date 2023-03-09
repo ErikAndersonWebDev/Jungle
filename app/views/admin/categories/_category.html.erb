@@ -1,11 +1,11 @@
 <tr>
-  <td>
+  <td span="2">
     <h4><%= category.name %></h4>
   </td>
   <td>
   <h4><%= category.products.count %></h4>
   </td>
   <td>
-  <h4><%= "blank" %></h4>
+  <h4><%= @products.where(category_id: [category.id]).sum(:quantity) %></h4>
   </td>
 </tr>
