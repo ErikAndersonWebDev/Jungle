@@ -1,0 +1,41 @@
+<h2>Order Details</h2>
+<h4>Order #<%= @order.id %></h4>
+<h4>Email: <%= @order.email %></h4>
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Product</th>
+      <th>Quantity</th>
+      <th>Unit Price</th>
+      <th>Total Price</th>
+    </tr>
+  </thead>
+  <tbody>
+    <% @line_items.each do |item| %>
+      <tr>
+        <td>
+          <%= image_tag item.product.image_url, size: "60x60"%>
+          <%= item.product.name %>
+          <br>
+          <%= item.product.description %>
+        </td>
+        <td><%= item.quantity %></td>
+        <td><%= humanized_money_with_symbol item.item_price %></td>
+        <td><%= humanized_money_with_symbol item.total_price %></td>
+      </tr>
+    <% end %>
+    <tfoot>
+      <td colspan="3" class="text-right">Order Total:</td>
+      <td><%= humanized_money_with_symbol @order.total_cents/100.0 %></td>
+    </tfoot>
+  </tbody>
+  </br>
+</table>
+
+
+
+
+
+
