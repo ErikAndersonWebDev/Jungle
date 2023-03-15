@@ -9,6 +9,7 @@ class UsersController < ApplicationController
       session[:user_id] = user.id
       redirect_to '/'
     else
+      flash.alert = "User already exists"
       redirect_to '/signup'
     end
   end

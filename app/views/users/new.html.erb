@@ -9,4 +9,9 @@
   Password Confirmation: <%= f.password_field :password_confirmation %>
   <%= f.submit "Submit" %>
 
+  <% if flash.alert %>
+  <script>
+    alert("<%= flash.alert %>");
+  </script>
+<% end %>
 <% end %>

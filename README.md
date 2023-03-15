@@ -1,6 +1,29 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
+Jungle is a mini e-commerce application build with Rails 6.1.
+
+- Visitors are able to:
+  - register their Name, Last Name, Email, and Password
+  - navigate the home page
+  - click on an item to see a description
+  - add items to the cart
+
+Visitors are required to register and log in before purchasing items.
+
+- Users, once registed and logged in, are able to:
+  - complete their order and checkout
+
+After checking out and validating the user's payment method, an order is generated, detailing the:
+
+- order number
+- user email
+- products purchased and their quantities and prices
+
+Under the Admin section, a user is able to:
+
+- create a category
+- add products to a category
+- delete a product from a category
 
 ## Setup
 
