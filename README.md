@@ -2,6 +2,8 @@
 
 Jungle is a mini e-commerce application build with Rails 6.1.
 
+<img src="./public/images/Jungle-Home.png" alt="Screenshot of Home Page" width="700"/>
+
 - Visitors are able to:
   - register their Name, Last Name, Email, and Password
   - navigate the home page
@@ -24,6 +26,16 @@ Under the Admin section, a user is able to:
 - create a category
 - add products to a category
 - delete a product from a category
+
+<img src="./public/images/Jungle-Products.png" alt="Screenshot of Products" width="700"/>
+
+<img src="./public/images/Jungle-Cart.png" alt="Screenshot of Cart" width="700"/>
+
+<img src="./public/images/Jungle-Order.png" alt="Screenshot of Order" width="700"/>
+
+<img src="./public/images/Jungle-Admin-Categories.png" alt="Screenshot of Admin Categories" width="700"/>
+
+<img src="./public/images/Jungle-Admin-Products.png" alt="Screenshot of Admin Products" width="700"/>
 
 ## Setup
 
@@ -52,3 +64,4 @@ More information in their docs: <https://stripe.com/docs/testing#cards>
 - Bootstrap 5
 - PostgreSQL 9.x
 - Stripe
+- Cypress
